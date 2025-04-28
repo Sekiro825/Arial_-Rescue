@@ -12,8 +12,8 @@ import threading
 
 # ---------------- GOOGLE DRIVE SETUP ---------------- #
 SCOPES = ['https://www.googleapis.com/auth/drive.file']
-SERVICE_ACCOUNT_FILE = '/home/saket/Downloads/imagesraspi-14a192281ee9.json'
-UPLOAD_FOLDER_ID = '1QeHWVbsJh2KKK57rJbDqzpi4xxsXjJRC'
+SERVICE_ACCOUNT_FILE = os.environ.get("SERVICE_ACCOUNT_FILE") #'/home/saket/Downloads/imagesraspi-14a192281ee9.json'
+UPLOAD_FOLDER_ID = os.environ.get("FOLDER_ID") #'1QeHWVbsJh2KKK57rJbDqzpi4xxsXjJRC'
 
 creds = service_account.Credentials.from_service_account_file(SERVICE_ACCOUNT_FILE, scopes=SCOPES)
 service = build('drive', 'v3', credentials=creds)

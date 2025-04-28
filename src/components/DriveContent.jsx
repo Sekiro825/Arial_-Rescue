@@ -8,8 +8,8 @@ const DriveContent = () => {
   const [error, setError] = useState(null);
 
   // Replace with your actual API key and Folder ID
-  const API_KEY = 'AIzaSyDTU7Eo3qmmZhaGfctKllk2bR826NJL3Rk';
-  const FOLDER_ID = '1QeHWVbsJh2KKK57rJbDqzpi4xxsXjJRC';
+  const API_KEY = import.meta.env.VITE_API_KEY;
+  const FOLDER_ID = import.meta.env.VITE_FOLDER_ID;
 
   useEffect(() => {
     const fetchDriveFiles = async () => {
