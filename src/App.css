@@ -1,0 +1,59 @@
+/* Container for the images */
+.image-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+/* Each image box */
+.image-box {
+  max-width: 220px; /* Sets a maximum width for each image box */
+  width: 100%; /* Makes sure the box adjusts to the container's width */
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  overflow: hidden;
+}
+
+/* Image styling */
+.image-box img {
+  width: 100%; /* Makes the image responsive */
+  height: auto; /* Keeps the aspect ratio */
+  object-fit: cover; /* Ensures the image fills the container */
+  border-radius: 8px; /* Adds rounded corners to the image */
+  transition: transform 0.3s ease; /* Smooth hover transition */
+}
+
+/* Hover effect for the images */
+.image-box img:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+
+/* Text below each image */
+.image-box p {
+  font-size: 14px;
+  color: #333;
+  margin-top: 8px;
+  font-weight: bold;
+  text-align: center;
+  word-wrap: break-word;
+}
+
+/* Link styling for text files */
+.image-box a {
+  display: inline-block;
+  padding: 10px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+  transition: background-color 0.3s;
+}
+
+.image-box a:hover {
+  background-color: #45a049; /* Darker green on hover */
+}

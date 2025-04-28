@@ -1,0 +1,79 @@
+/* In your "../assets/style.css" file */
+.drive-content {
+  text-align: center;
+  padding: 20px;
+  background-image: url('../assets/background.jpg'); /* Set the background image */
+  background-size: cover; /* Cover the entire container */
+  background-repeat: no-repeat; /* Prevent image from repeating */
+  background-position: center; /* Center the image */
+  color: #333; /* Adjust text color for better readability against the background */
+}
+
+.file-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Slightly reduce the gap */
+  justify-content: flex-start; /* Align items to the start and wrap */
+}
+
+.file-item {
+  background-color: rgba(255, 255, 255, 0.8); /* Add a semi-transparent background for better readability */
+  border: 1px solid #ddd;
+  padding: 10px; /* Reduce padding inside the box */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  width: calc(20% - 15px); /* Adjust width to account for the reduced gap and padding */
+  box-sizing: border-box;
+  display: flex; /* Use flexbox to control alignment of content */
+  flex-direction: column; /* Stack content vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text within the box */
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 5px; /* Add some space below the image */
+}
+
+.drive-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 5px; /* Reduce margin below the image */
+}
+
+.file-name {
+  font-size: 12px; /* Slightly reduce font size */
+  text-align: center;
+  word-break: break-word; /* Ensure long names wrap */
+}
+
+.text-file-container {
+  text-align: center;
+  width: 100%; /* Ensure the container takes full width */
+}
+
+.text-file-link {
+  display: block; /* Make the link a block element to take full width */
+  padding: 8px 10px; /* Reduce padding for the link */
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  font-size: 12px; /* Reduce font size of the link */
+  word-break: break-word; /* Ensure long file names wrap */
+}
+
+.text-file-link:hover {
+  background-color: #0056b3;
+}
+
+.unknown-file {
+  text-align: center;
+  color: #777;
+  font-size: 12px; /* Reduce font size */
+  word-break: break-word;
+}
